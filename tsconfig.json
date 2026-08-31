@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": ["es2018", "ESNext.AsyncIterable"],
+    "allowJs": true,
+    "checkJs": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "typeRoots": ["./node_modules/@types"],
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "paths": {
+      "/opt/nodejs/dynamodb": [ "src/layers/dynamodb/nodejs/dynamodb" ],
+      "/opt/nodejs/s3-utils": [ "src/layers/s3-utils/nodejs/s3-utils" ],
+      "/opt/nodejs/http-utils": [ "src/layers/http-utils/nodejs/http-utils" ],
+      "/opt/nodejs/web3": [ "src/layers/web3/nodejs/web3" ],
+      "/opt/nodejs/opensearch": [ "src/layers/opensearch/nodejs/opensearch" ]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "cdk.out"]
+}
